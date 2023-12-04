@@ -9,10 +9,10 @@ import MaintenanceRequests from "./components/MaintenanceRequests";
 
 const App = () => (
   <Router>
-    <div>
+    <div className="App">
       <Navbar bg="light" expand="lg" className="navbar">
         <Navbar.Brand as={Link} to="/">
-          Building Maintenance
+          <span className="brand-text">Building Maintenance</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -32,9 +32,7 @@ const App = () => (
 
       <Routes>
         <Route path="/projects" element={<Projects />} />
-
         <Route path="/maintenance-requests" element={<MaintenanceRequests />} />
-
         <Route path="/" element={<Home />} />
       </Routes>
     </div>

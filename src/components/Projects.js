@@ -22,8 +22,7 @@ const Projects = () => {
     fetchData();
 
     return () => {
-      // Виконати дії очищення, якщо потрібно
-    };
+     
   }, []);
 
   const addProject = () => {
