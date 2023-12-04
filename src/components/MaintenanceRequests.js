@@ -1,20 +1,20 @@
 // MaintenanceRequests.js
-import React, { useState } from 'react';
-import { Container, Modal, Button, Form, Table } from 'react-bootstrap';
-import './MaintenanceRequests.css';
+import React, { useState } from "react";
+import { Container, Modal, Button, Form, Table } from "react-bootstrap";
+import "./MaintenanceRequests.css";
 
 const MaintenanceRequests = () => {
   const [showModal, setShowModal] = useState(false);
   const [requests, setRequests] = useState([]);
   const [newRequest, setNewRequest] = useState({
-    address: '',
-    time: '',
-    issue: '',
+    address: "",
+    time: "",
+    issue: "",
   });
 
   const addRequest = () => {
     setRequests([...requests, newRequest]);
-    setNewRequest({ address: '', time: '', issue: '' });
+    setNewRequest({ address: "", time: "", issue: "" });
     setShowModal(false);
   };
 
@@ -70,7 +70,9 @@ const MaintenanceRequests = () => {
                 type="text"
                 placeholder="Enter address"
                 value={newRequest.address}
-                onChange={(e) => setNewRequest({ ...newRequest, address: e.target.value })}
+                onChange={(e) =>
+                  setNewRequest({ ...newRequest, address: e.target.value })
+                }
               />
             </Form.Group>
             <Form.Group controlId="formTime">
@@ -79,7 +81,9 @@ const MaintenanceRequests = () => {
                 type="text"
                 placeholder="Enter time"
                 value={newRequest.time}
-                onChange={(e) => setNewRequest({ ...newRequest, time: e.target.value })}
+                onChange={(e) =>
+                  setNewRequest({ ...newRequest, time: e.target.value })
+                }
               />
             </Form.Group>
             <Form.Group controlId="formIssue">
@@ -88,7 +92,9 @@ const MaintenanceRequests = () => {
                 type="text"
                 placeholder="Enter issue description"
                 value={newRequest.issue}
-                onChange={(e) => setNewRequest({ ...newRequest, issue: e.target.value })}
+                onChange={(e) =>
+                  setNewRequest({ ...newRequest, issue: e.target.value })
+                }
               />
             </Form.Group>
           </Form>
@@ -107,4 +113,3 @@ const MaintenanceRequests = () => {
 };
 
 export default MaintenanceRequests;
-

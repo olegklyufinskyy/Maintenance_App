@@ -1,20 +1,29 @@
 // Projects.js
-import React, { useState, useEffect } from 'react';
-import { Container, Modal, Button, Form } from 'react-bootstrap';
-import './Projects.css'; 
-import api from '../api'; 
+import React, { useState, useEffect } from "react";
+import { Container, Modal, Button, Form } from "react-bootstrap";
+import "./Projects.css";
+import api from "../api";
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [projects, setProjects] = useState([]);
   const [newProject, setNewProject] = useState({});
 
-  //get projects when the page loads
-  //uses async/await to wait for the api to return the maintence requests, this ensures the projects array [ ] is not blank.
-  useEffect( async () => {
-    const gettingProjects = await api.fetchMaintenanceRequests()
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const gettingProjects = await api.fetchMaintenanceRequests();
+        setProjects(gettingProjects);
+      } catch (error) {
+        console.error("Помилка при отриманні проектів:", error);
+      }
+    };
 
-    setProjects(gettingProjects);
+    fetchData();
+
+    return () => {
+      // Виконати дії очищення, якщо потрібно
+    };
   }, []);
 
   const addProject = () => {
@@ -75,8 +84,10 @@ const Projects = () => {
               <Form.Control
                 type="text"
                 placeholder="Enter project title"
-                value={newProject.title || ''}
-                onChange={(e) => setNewProject({ ...newProject, title: e.target.value })}
+                value={newProject.title || ""}
+                onChange={(e) =>
+                  setNewProject({ ...newProject, title: e.target.value })
+                }
               />
             </Form.Group>
             <Form.Group controlId="formDescription">
@@ -85,8 +96,10 @@ const Projects = () => {
                 as="textarea"
                 rows={3}
                 placeholder="Enter project description"
-                value={newProject.description || ''}
-                onChange={(e) => setNewProject({ ...newProject, description: e.target.value })}
+                value={newProject.description || ""}
+                onChange={(e) =>
+                  setNewProject({ ...newProject, description: e.target.value })
+                }
               />
             </Form.Group>
             <Button

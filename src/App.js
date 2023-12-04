@@ -1,15 +1,7 @@
 // App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import {
-  Navbar,
-  Nav,
-  Container,
-  Modal,
-  Button,
-  Form,
-  Table,
-} from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import "./App.css";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
