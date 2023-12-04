@@ -1,7 +1,7 @@
 {
   "name": "maintenance-app",
   "version": "0.1.0",
-  "homepage": "https://olegklyufinskyy.github.io/Maintenance-App/",
+  "homepage": "https://olegklyufinskyy.github.io/Maintenance_App/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
