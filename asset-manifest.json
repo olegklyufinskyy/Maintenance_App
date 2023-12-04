@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Maintenance-App/static/css/main.9abc70fe.css",
-    "main.js": "/Maintenance-App/static/js/main.a7257fa3.js",
-    "static/js/787.130fa9f8.chunk.js": "/Maintenance-App/static/js/787.130fa9f8.chunk.js",
-    "index.html": "/Maintenance-App/index.html",
-    "main.9abc70fe.css.map": "/Maintenance-App/static/css/main.9abc70fe.css.map",
-    "main.a7257fa3.js.map": "/Maintenance-App/static/js/main.a7257fa3.js.map",
-    "787.130fa9f8.chunk.js.map": "/Maintenance-App/static/js/787.130fa9f8.chunk.js.map"
+    "main.css": "/Maintenance_App/static/css/main.9abc70fe.css",
+    "main.js": "/Maintenance_App/static/js/main.e9484fb1.js",
+    "static/js/787.130fa9f8.chunk.js": "/Maintenance_App/static/js/787.130fa9f8.chunk.js",
+    "index.html": "/Maintenance_App/index.html",
+    "main.9abc70fe.css.map": "/Maintenance_App/static/css/main.9abc70fe.css.map",
+    "main.e9484fb1.js.map": "/Maintenance_App/static/js/main.e9484fb1.js.map",
+    "787.130fa9f8.chunk.js.map": "/Maintenance_App/static/js/787.130fa9f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9abc70fe.css",
-    "static/js/main.a7257fa3.js"
+    "static/js/main.e9484fb1.js"
   ]
 }
