@@ -17,13 +17,17 @@ const App = () => (
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/" className="custom-button">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/projects">
+            <Nav.Link as={Link} to="/projects" className="custom-button">
               Projects
             </Nav.Link>
-            <Nav.Link as={Link} to="/maintenance-requests">
+            <Nav.Link
+              as={Link}
+              to="/maintenance-requests"
+              className="custom-button"
+            >
               Maintenance Requests
             </Nav.Link>
           </Nav>
