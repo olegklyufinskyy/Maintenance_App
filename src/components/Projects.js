@@ -22,7 +22,8 @@ const Projects = () => {
     fetchData();
 
     return () => {
-     
+      // Ваш код для очищення (якщо потрібно)
+    };
   }, []);
 
   const addProject = () => {
