@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import "./App.css";
 import Home from "./components/Home";
-import Projects from "./components/Projects";
 import MaintenanceRequests from "./components/MaintenanceRequests";
 
 const App = () => (
@@ -20,9 +19,6 @@ const App = () => (
             <Nav.Link as={Link} to="/" className="custom-button">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/projects" className="custom-button">
-              Projects
-            </Nav.Link>
             <Nav.Link
               as={Link}
               to="/maintenance-requests"
@@ -35,7 +31,6 @@ const App = () => (
       </Navbar>
 
       <Routes>
-        <Route path="/projects" element={<Projects />} />
         <Route path="/maintenance-requests" element={<MaintenanceRequests />} />
         <Route path="/" element={<Home />} />
       </Routes>

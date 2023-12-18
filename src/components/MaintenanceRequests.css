@@ -23,8 +23,8 @@
 
 .Button {
   margin-top: 10px;
-  background: #4caf50;
-  color: white;
+  background: #4d5952;
+  color: rgb(255, 250, 250);
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -33,15 +33,16 @@
 }
 
 .Button:hover {
-  background: #45a049;
+  background: #495549;
 }
 
 .Form button {
-  background: #007bff;
+  background: #dce0e5;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
+  border: 5px solid #ddd;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -59,6 +60,7 @@ body {
 }
 
 .Table button {
+  border: 5px solid #ddd;
   background: #d9534f;
   color: white;
   padding: 8px 12px;
@@ -70,4 +72,13 @@ body {
 
 .Table button:hover {
   background: #c9302c;
+  border: 5px solid #ddd;
+}
+
+.maintenance-requests-background {
+  background: url("C:\Users\westu\OneDrive\Desktop\Maintenance_App-2\src\components\Images\instruments-carpenter-wooden-table_23-2148180540.jpg")
+    center/cover no-repeat fixed;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 50px;
 }

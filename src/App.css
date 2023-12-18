@@ -6,22 +6,23 @@
   text-transform: uppercase;
   font-size: 4.5em;
   font-weight: bold;
-  color: #8f99a0;
+  color: #ffffff;
+  text-shadow: 20px 2px 4px rgba(15, 6, 6, 0.8);
 }
 
 .custom-button {
-  margin: 5px; /* Додайте відступ, як вам потрібно */
-  font-size: 1.5em; /* Збільште розмір шрифту, як вам потрібно */
-  text-decoration: none; /* Заборона підчеркування для тексту посилань */
-  padding: 10px 20px; /* Додайте відступи від тексту кнопки */
-  border-radius: 10px; /* Задайте радіус кутів для кнопки */
-  color: #007bff; /* Задайте колір тексту кнопки */
-  border: 2px solid #007bff; /* Задайте колір межі кнопки */
-  background-color: #ffffff; /* Задайте колір фону кнопки */
-  transition: all 0.3s ease-in-out; /* Додайте анімацію для плавного змінення стилів */
+  margin: 20px;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #4f5254;
+  border: 2px solid #5e5e5e;
+  background-color: #e8e0e0;
+  transition: all 0.3s ease-in-out;
 }
 
 .custom-button:hover {
-  color: #ffffff; /* Змініть колір тексту при наведенні курсору */
-  background-color: #007bff; /* Змініть колір фону при наведенні курсору */
+  color: #397e72;
+  background-color: #41474e;
 }
