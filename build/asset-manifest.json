@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Maintenance_App/static/css/main.9ebd0a18.css",
+    "main.js": "/Maintenance_App/static/js/main.b02a831c.js",
+    "static/js/787.130fa9f8.chunk.js": "/Maintenance_App/static/js/787.130fa9f8.chunk.js",
+    "static/media/top-view-steel-hammer-with-other-construction-elements-tools_23-2150576412.jpg": "/Maintenance_App/static/media/top-view-steel-hammer-with-other-construction-elements-tools_23-2150576412.42a7f9869ceb81acb3be.jpg",
+    "static/media/instruments-carpenter-wooden-table_23-2148180540.jpg": "/Maintenance_App/static/media/instruments-carpenter-wooden-table_23-2148180540.908f6a04fac2f22b61ee.jpg",
+    "index.html": "/Maintenance_App/index.html",
+    "main.9ebd0a18.css.map": "/Maintenance_App/static/css/main.9ebd0a18.css.map",
+    "main.b02a831c.js.map": "/Maintenance_App/static/js/main.b02a831c.js.map",
+    "787.130fa9f8.chunk.js.map": "/Maintenance_App/static/js/787.130fa9f8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ebd0a18.css",
+    "static/js/main.b02a831c.js"
+  ]
+}
